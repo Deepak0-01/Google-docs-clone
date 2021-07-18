@@ -4,7 +4,7 @@ import Icon from "@material-tailwind/react/Icon";
 import Button from "@material-tailwind/react/Button";
 import Image from "next/image";
 import { getSession, useSession } from "next-auth/client";
-import Login from "../components/Login";
+
 import Modal from "@material-tailwind/react/Modal";
 import ModalHeader from "@material-tailwind/react/ModalHeader";
 import ModalBody from "@material-tailwind/react/ModalBody";
@@ -17,6 +17,7 @@ import {
   useCollectionOnce,
 } from "react-firebase-hooks/firestore";
 import DocumentRow from "../components/DocumentRow";
+import Login from "../components/login";
 
 function Home() {
   const [session] = useSession();
